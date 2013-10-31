@@ -1,0 +1,2 @@
+Removed a bug which caused labels with dead-key characters to be cut short
+Fixed a layout bug with E-mail box in Work tab

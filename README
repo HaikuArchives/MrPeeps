@@ -1,0 +1,42 @@
+Mr. Peeps! v1.2 Beta 2
+"Goofy name, serious app"
+
+Originally, Mr. Peeps! was little more than a revision of Peeps! v.10 by Justin Bishop, done as sort of a weekend project to make it easier to manage People files. Since that time, the code has seen some serious work and now has more useful features than other contact managers. It's also been written with the intention of also making it an example of how to make a program which really is easy to use.
+
+About this version
+
+Apparently, I have no life or I care too much -- I'm not completely sure which one. Beta 2 isn't much different from Beta 1 except that there is a layout bug fixed on the Work tab and a fix for non-English labels being cut off. Generally I don't do a release for a couple of minor bugs like that, but having labels that don't look right would be quite an annoyance (to me) after quite a while.
+
+Even though I use Mr. Peeps! myself in day-to-day use, I may not find certain bugs, so if you find any, contact me so that Mr. Peeps! can be an _awesome_ contact manager.
+
+--DarkWyrm
+bpmagic@columbus.rr.com
+
+Features
+
+Autosave - no more clicking File|Save or typing Alt-S. Edit it and it's saved that way
+
+Fast keyboard navigation:
+	Use Tab and Shift-Tab to jump between data fields
+	Alt-Up and Alt-Down go to the next/previous person, no matter what
+	When using the People list, use the cursor keys or jump to a person using a letter key
+	Use the Alt key plus the 1-5 keys to change tabs, i.e. Alt+2 is the Personal tab
+	Use Alt-X, Alt-C, and Alt-V to Cut, Copy, and Paste text in the information boxes
+	Undo edits with Alt-Z
+
+Multiple groups - separate group names with a comma
+
+Native Language support - Mr. Peeps! can now show itself in your own language and you can change languages quickly, if you so choose.
+
+More Data - handles more types of data than even People v2 and DeeperPeople, such as
+	birthdays, anniversaries, and other personal data.
+
+Associate photos with entries - drag an image from Tracker or ShowImage and drop it in the photo box and you automagically have a nice photo to associate with a name. You can also paste in an image from the BeOS clipboard, too.
+
+Intelligence - Mr. Peeps! tries to work with  you, not against you. For example, you can just punch in a phone number as 5554561234 and Mr. Peeps! will recognize it for what it is and make it easier to read as (555) 456-1234. Even phone numbers which use letters (like 1-800-DRUIDIA from Spaceballs fame) are converted to their proper numeric format.
+
+Data Preservation - if Mr. Peeps! doesn't recognize your data, it doesn't do anything to it except make sure that it's there for you exactly the way you leave it.
+
+Stability - Many programmers say they try to make their code bulletproof, but few actually attempt to do so. I am one of them, however, so while there is no guarantee that it won't ever crash in your life, it is highly unlikely, especially if you're not *trying* to crash it.
+
+Goofball Factor - somewhere in there are hidden features just for the fun of it. :P
