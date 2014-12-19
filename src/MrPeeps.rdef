@@ -7,11 +7,11 @@ resource app_version {
 	middle = 2,
 	minor  = 0,
 
-	variety = B_APPV_BETA,
-	internal = 2,
+	variety = B_APPV_FINAL,
+	internal = 0,
 
-	short_info = "1.2 Beta 2",
-	long_info = "Mr. Peeps! v1.2 Beta 2"
+	short_info = "1.2",
+	long_info = "Mr. Peeps! v1.2"
 };
 
 resource file_types message {
