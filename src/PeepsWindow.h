@@ -3,10 +3,12 @@
 
 #include <Window.h>
 #include <View.h>
+#include <ListView.h>
 #include <TextControl.h>
 #include <PopUpMenu.h>
 #include <Button.h>
 #include <Menu.h>
+#include <Entry.h>
 #include <MenuItem.h>
 #include "NewTextControl.h"
 #include <Messenger.h>

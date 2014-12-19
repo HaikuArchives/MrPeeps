@@ -2,6 +2,7 @@
 #define LIST_DATA
 
 #include <Entry.h>
+#include <Node.h>
 #include <List.h>
 #include <String.h>
 #include "BStringList.h"
