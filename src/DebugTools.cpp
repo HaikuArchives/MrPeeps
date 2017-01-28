@@ -1,11 +1,11 @@
 #include "DebugTools.h"
 #include <stdio.h>
 #include <Alert.h>
-#include <iostream.h>
+#include <iostream>
 #include <String.h>
 #include <Errors.h>
 
-void DebugAlert(const char *msg, const char *title="Debug")
+void DebugAlert(const char *msg, const char *title)
 {
 
 (new BAlert(title, msg ,"OK",NULL,NULL,B_WIDTH_AS_USUAL,B_WARNING_ALERT))->Go();
