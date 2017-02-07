@@ -596,7 +596,7 @@ BBitmap *BitmapView::BitmapFromClipboard(void)
 			be_clipboard->Unlock();
 			
 			const void *buffer;
-			int32 bufferLength;
+			ssize_t bufferLength;
 			
 			BRect frame;
 			color_space cspace=B_NO_COLOR_SPACE;
@@ -629,7 +629,7 @@ BBitmap *BitmapView::BitmapFromClipboard(void)
 		case CLIP_BEOS:
 		{
 			const void *buffer;
-			int32 bufferLength;
+			ssize_t bufferLength;
 			
 			BRect frame;
 			color_space cspace=B_NO_COLOR_SPACE;

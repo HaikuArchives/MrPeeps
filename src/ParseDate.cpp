@@ -1,5 +1,6 @@
 #include "ParseDate.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 // Does all the work of ParseDate plus returns it in a pretty format
 status_t FormatDate(const char *source, BString &out)
