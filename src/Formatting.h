@@ -2,7 +2,7 @@
 #define FORMATTING_H_
 
 #include <String.h>
-#include "BStringList.h"
+#include <StringList.h>
 
 status_t ParseName(const char *source, BString &first, BString &last);
 status_t ParsePhoneNumber(const char *source, BString &out);

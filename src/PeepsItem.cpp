@@ -142,7 +142,7 @@ void GroupParser::SetTo(const char *string)
 	
 	if(!token)
 	{
-		namelist.AddItem(strdup(string));
+		namelist.Add(strdup(string));
 		return;
 	}
 	
@@ -158,7 +158,7 @@ void GroupParser::SetTo(const char *string)
 			lasttoken++;
 			length--;
 		}
-		namelist.AddItem(lasttoken);
+		namelist.Add(lasttoken);
 		lasttoken=token;
 
 		token=strtok(NULL,",");
@@ -174,7 +174,7 @@ void GroupParser::SetTo(const char *string)
 		length--;
 	}
 
-	namelist.AddItem(lasttoken);
+	namelist.Add(lasttoken);
 }
 
 bool GroupParser::RemoveDuplicates(void)
@@ -184,21 +184,21 @@ bool GroupParser::RemoveDuplicates(void)
 	
 	bool rebuild_string=false;
 	
-	BString *current=NULL;
+	BString current=NULL;
 	
-	if(namelist.CountItems()==1)
+	if(namelist.CountStrings()==1)
 		return false;
 	
-	for(int32 i=0; i<namelist.CountItems()-1; i++)
+	for(int32 i=0; i<namelist.CountStrings()-1; i++)
 	{
-		current=namelist.ItemAt(i);
+		current=namelist.StringAt(i);
 
-		for(int32 j=i+1; j<namelist.CountItems(); j++)
+		for(int32 j=i+1; j<namelist.CountStrings(); j++)
 		{
-			BString *item2=namelist.ItemAt(j);
-			if(current->Compare(item2->String())==0)
+			BString item2=namelist.StringAt(j);
+			if(current.Compare(item2.String())==0)
 			{
-				namelist.RemoveItem(item2);
+				namelist.Remove(item2);
 				delete item2;
 				
 				if(!rebuild_string)
@@ -212,12 +212,12 @@ bool GroupParser::RemoveDuplicates(void)
 	{
 		groupstring="";
 		
-		int32 count=namelist.CountItems();
+		int32 count=namelist.CountStrings();
 		
 		for(int32 i=0; i<count; i++)
 		{
-			current=namelist.ItemAt(i);
-			groupstring+=current->String();
+			current=namelist.StringAt(i);
+			groupstring+=current.String();
 			if(i<count-1)
 				groupstring+=",";
 		}
@@ -228,14 +228,14 @@ bool GroupParser::RemoveDuplicates(void)
 
 void GroupParser::MakeEmpty(void)
 {
-	namelist.MakeEmpty(true);
+	namelist.MakeEmpty();
 }
 
 void GroupParser::PrintToStream(void)
 {
 	printf("GroupParser: \n");
 	for(int32 i=0; i<CountGroups();i++)
-		printf("\t%s\n",(char *)namelist.ItemAt(i));
+		printf("\t%s\n",namelist.StringAt(i));
 }
 
 bool GroupParser::HasGroup(const char *name)

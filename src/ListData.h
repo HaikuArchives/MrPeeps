@@ -5,7 +5,7 @@
 #include <Node.h>
 #include <List.h>
 #include <String.h>
-#include "BStringList.h"
+#include <StringList.h>
 #include <Bitmap.h>
 #include "BitmapDump.h"
 

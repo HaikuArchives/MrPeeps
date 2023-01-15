@@ -2,7 +2,7 @@
 #define PEOPLE_ITEM_H
 
 #include <String.h>
-#include "BStringList.h"
+#include <StringList.h>
 #include <File.h>
 #include <TextControl.h>
 #include <MenuItem.h>
@@ -64,10 +64,10 @@ public:
 	GroupParser(void);
 	~GroupParser(void);
 	
-	int32 CountGroups(void) { return namelist.CountItems(); }
+	int32 CountGroups(void) { return namelist.CountStrings(); }
 	void SetTo(const char *string);
 	void MakeEmpty(void);
-	const char *GroupAt(int32 index) { return namelist.ItemAt(index)->String(); }
+	const char *GroupAt(int32 index) { return namelist.StringAt(index); }
 	bool HasGroup(const char *name);
 	void PrintToStream(void);
 	bool RemoveDuplicates(void);

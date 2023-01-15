@@ -783,7 +783,7 @@ status_t TokenizeGroupString(const char *source, BStringList *stringlist)
 	if(!token)
 	{
 		delete workstr;
-		stringlist->AddItem(src.String());
+		stringlist->Add(src.String());
 		return B_OK;
 	}
 	
@@ -799,7 +799,7 @@ status_t TokenizeGroupString(const char *source, BStringList *stringlist)
 			lasttoken++;
 			length--;
 		}
-		stringlist->AddItem(lasttoken);
+		stringlist->Add(lasttoken);
 		lasttoken=token;
 
 		token=strtok(NULL,",");
@@ -815,7 +815,7 @@ status_t TokenizeGroupString(const char *source, BStringList *stringlist)
 		length--;
 	}
 
-	stringlist->AddItem(lasttoken);
+	stringlist->Add(lasttoken);
 	
 	delete workstr;
 	
